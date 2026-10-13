@@ -43,8 +43,9 @@ INSTALLED_APPS = [
     'ExpeditionsApp',
     'OffresApp',
     'VehiculesApp',
-    
 ]
+
+AUTH_USER_MODEL = 'EntreprisesApp.Utilisateur'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
