@@ -13,13 +13,7 @@ class UtilisateurAdmin(UserAdmin):
 
     ordering = ('user_id',)
 
-    fieldsets = UserAdmin.fieldsets + (
-        ('Infos TransConnect', {'fields': ('telephone', 'role')}),
-    )
-    add_fieldsets = UserAdmin.add_fieldsets + (
-        ('Infos TransConnect', {'fields': ('email', 'telephone', 'role')}),
-    )
-
+   
 
 @admin.register(Entreprise)
 class EntrepriseAdmin(admin.ModelAdmin):
